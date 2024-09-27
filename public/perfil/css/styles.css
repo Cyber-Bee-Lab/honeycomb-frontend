@@ -1,3 +1,6 @@
+.welcome{
+.profile-picture{
+.logo{
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
@@ -77,4 +80,7 @@ h1 {
 p {
     font-size: 18px;
     color: #666;
+}
+}
+}
 }
