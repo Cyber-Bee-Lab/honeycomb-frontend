@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honeycombs</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(90deg, yellow, rgb(240, 250, 151));
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 1);
+            width: 250px;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #fdd835;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 15px;
+            width: 100%;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #fbc02d;
+        }
+
+        .register {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .register a {
+            color: purple;
+            text-decoration: none;
+        }
+
+        .register a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <img src="https://wallpapers.com/images/featured-full/abelha-do-minecraft-twgsgadxj8gqzizm.jpg" alt="Avatar">
+        <h1>Login</h1>
+        
+        <!-- Aqui é onde você deve modificar o formulário -->
+        <form action="/login" method="POST">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="password" name="password" placeholder="Senha">
+            <button type="submit">Entrar</button>
+        </form>
+        
+        <div class="register">
+            ou <a href="#">Cadastre-se</a>
+        </div>
+    </div>
+
+</body>
+</html>
