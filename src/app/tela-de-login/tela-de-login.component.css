@@ -1,0 +1,56 @@
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #fdd835, #f57f20);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-container {
+    background-color: rgba(255, 255, 255, 1);
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #fdd835;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fbc02d;
+}
+
+.login {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.login a {
+    color: purple;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}

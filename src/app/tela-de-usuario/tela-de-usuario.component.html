@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoneyComb - Lista de Usuários</title> 
+</head>
+<body>
+    <div class="header">
+        <h1>HoneyComb</h1>
+        <button>Sair</button>
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Pesquisar...">
+        <button>Pesquisar</button>
+    </div>
+
+    <div id="user-list">
+        <!-- Lista de usuários será inserida aqui dinamicamente -->
+    </div>
+
+    <script>
+        // Aqui será o código JavaScript para buscar e renderizar os dados do MongoDB
+        async function fetchUsers() {
+            const response = await fetch('/api/users'); // Endpoint da API no backend
+            const users = await response.json();
+            const userList = document.getElementById('user-list');
+
+            users.forEach(user => {
+                const userCard = document.createElement('div');
+                userCard.classList.add('user-card');
+
+                userCard.innerHTML = `
+                    <div class="user-info">
+                        <div class="user-avatar">${user.nome[0]}${user.sobrenome[0]}</div>
+                        <div>
+                            <h3>${user.nome} ${user.sobrenome}</h3>
+                            <p>Função: ${user.funcao}</p>
+                            <p>${user.email}</p>
+                        </div>
+                    </div>
+                    <div class="user-actions">
+                        <button class="edit">Editar</button>
+                        <button class="delete">Excluir</button>
+                    </div>
+                `;
+
+                userList.appendChild(userCard);
+            });
+        }
+
+        fetchUsers();
+    </script>
+</body>
+</html>

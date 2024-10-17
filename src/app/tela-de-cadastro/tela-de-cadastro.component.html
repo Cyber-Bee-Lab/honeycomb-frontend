@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+    
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <div class="header">
+        <h1>Honeycomb</h1>
+        <div class="welcome">Bem vindo, Nome</div>
+        <button class="logout-button">Sair</button>
+    </div>
+
+    <!-- Formulário de cadastro -->
+    <div class="register-container">
+        <h1>Dados</h1>
+        <form action="/register" method="POST">
+            <input type="text" name="name" placeholder="Nome" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="date" name="dob" placeholder="Data de Nascimento" required>
+            <select name="role" required>
+                <option value="" disabled selected>Função</option>
+                <option value="admin">Admin</option>
+                <option value="user">Usuário</option>
+                <option value="moderator">Moderador</option>
+            </select>
+            <button type="submit">Cadastrar</button>
+        </form>
+        <div class="login">
+            <p>Já tem uma conta? <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">Aqui</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
