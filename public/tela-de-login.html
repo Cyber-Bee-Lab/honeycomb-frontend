@@ -6,27 +6,36 @@
     <title>Honeycomb Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
     <style>
-body {
-    font-family: 'Nunito', Arial, Helvetica, sans-serif;
-    background-image: url('https://s3-alpha-sig.figma.com/img/789d/9671/e72e97dbc7338c05e37219a247f05328?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HsCRTldyEbmdGjHa1fa9FqC3bqGVEuWBz01gThRPSQHTJVhFLWQb8Do~CA4UNp9ekDIz2ToRzUSy3xchGHLtwoeKdoVfzEQWSYKSGu0SkY3xffYQyQBvJfX~WgIcgCKo41jpNpMe4SRFWeQk~r0LSRZ2Jk5LRIU-ZouICni3yh9-wnWk5UOY98-BqNN4zZlaR~45Dd3qIkWd39U1gY38-QOCsMxGGJOdnV7b2Pmj7tinOKz~qkQdsDwQI17vOCQenX~nci3sL8Ph2UUOrVRPqGhoZK7lyTebZWkQKFmWYO2AylGSLF3uMs6UX1e0nS0LqeRF~DLFyKiwV19t4ZU0ZQ__');
-    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+        body {
+            font-family: 'Nunito', Arial, Helvetica, sans-serif;
+            background-image: url('https://s3-alpha-sig.figma.com/img/789d/9671/e72e97dbc7338c05e37219a247f05328?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HsCRTldyEbmdGjHa1fa9FqC3bqGVEuWBz01gThRPSQHTJVhFLWQb8Do~CA4UNp9ekDIz2ToRzUSy3xchGHLtwoeKdoVfzEQWSYKSGu0SkY3xffYQyQBvJfX~WgIcgCKo41jpNpMe4SRFWeQk~r0LSRZ2Jk5LRIU-ZouICni3yh9-wnWk5UOY98-BqNN4zZlaR~45Dd3qIkWd39U1gY38-QOCsMxGGJOdnV7b2Pmj7tinOKz~qkQdsDwQI17vOCQenX~nci3sL8Ph2UUOrVRPqGhoZK7lyTebZWkQKFmWYO2AylGSLF3uMs6UX1e0nS0LqeRF~DLFyKiwV19t4ZU0ZQ__');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         .login-container {
             background-color: rgba(255, 255, 255, 1);
-            width: 250px;
-            padding: 25px;
+            width: 300px;
+            padding: 100px 15px;
             border-radius: 10px;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             text-align: center;
+            position: relative;
+        }
+
+        .login-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Torna a imagem redonda */
+            margin: -70px auto 10px auto; /* Posiciona acima do título */
+            display: block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         input[type="text"], input[type="password"] {
@@ -58,12 +67,13 @@ body {
             color: purple;
             text-decoration: none;
         }
-
     </style>
 </head>
 <body>
 
     <div class="login-container">
+        <!-- Adicionei a imagem redonda acima do título -->
+        <img src="https://s3-alpha-sig.figma.com/img/e150/eefe/69cb5ff7f100206087d4117e7f40a2fb?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l1Z2~L3xDQLrfiUx76G~u3Go0xH7qqfzYljyRrcejcE~-T4e0Gn7haCSZ439J5lQ5PJSWw2j3FEhwdx~JSMbQN6BcqDzKcY7ltlPikEFy2NgqvPP2m0SRWrmenybZnKXSSqG-uWGtxtV4RYi4hoMQK9iDrprTCu5btJIy3b4E-nWgMhc8qmgbTHsLrX~xweee3CN2FQ-jo2Nc9A0PZlmjtY~BEM9mi0Yfj2OVkuJ4NTDZqiB-J4QhCallZ4QNp1LuKr7GWw7ATloryfJ0jDsG8pyAlCqYSrwcJXcsajv19Ct5YgbK1zfFdoLWswo-SLgAa5iR3cGjVeKUCyLBPRlqw__" alt="Bee Icon">
         <h1>Login</h1>
         
         <!-- Formulário de login -->
