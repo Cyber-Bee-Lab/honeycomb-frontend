@@ -15,6 +15,7 @@
 
         /* Estilo do cabeçalho */
         .header {
+            position: relative;
             background: linear-gradient(to right, #fdd835, #f57f20); /* Gradiente amarelo para laranja */
             display: flex;
             justify-content: space-between;
@@ -23,10 +24,24 @@
             color: #fff;
         }
 
+        .header-logo {
+            display: flex;
+            align-items: center; /* Alinha verticalmente a imagem e o texto */
+        }
+
+        .header-logo img {
+            width: 50px; /* Ajuste o tamanho da imagem */
+            height: auto;
+            margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+        }
+        
         .header h1 {
+            position: absolute;
             margin: 0;
-            font-size: 24px;
+            font-size: 60px;
             font-weight: bold;
+            font-family: 'Kolker Brush', cursive; /* Define a fonte personalizada */
+
         }
 
         .header .welcome {
