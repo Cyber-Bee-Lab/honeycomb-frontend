@@ -13,24 +13,34 @@
         }
 
         .header {
-            background-color: #ffbf00;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    background-image: url('https://s3-alpha-sig.figma.com/img/789d/9671/e72e97dbc7338c05e37219a247f05328?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HsCRTldyEbmdGjHa1fa9FqC3bqGVEuWBz01gThRPSQHTJVhFLWQb8Do~CA4UNp9ekDIz2ToRzUSy3xchGHLtwoeKdoVfzEQWSYKSGu0SkY3xffYQyQBvJfX~WgIcgCKo41jpNpMe4SRFWeQk~r0LSRZ2Jk5LRIU-ZouICni3yh9-wnWk5UOY98-BqNN4zZlaR~45Dd3qIkWd39U1gY38-QOCsMxGGJOdnV7b2Pmj7tinOKz~qkQdsDwQI17vOCQenX~nci3sL8Ph2UUOrVRPqGhoZK7lyTebZWkQKFmWYO2AylGSLF3uMs6UX1e0nS0LqeRF~DLFyKiwV19t4ZU0ZQ__'); /* URL da imagem */
+    background-size: cover; /* Faz a imagem cobrir o espaço */
+    background-position: center; /* Centraliza a imagem */
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
         .header h1 {
-            color: #fff;
+            position: absolute;
+            margin: 0;
+            font-size: 60px;
+            font-weight: bold;
+            font-family: 'Kolker Brush', cursive; /* Define a fonte personalizada */
+            color: #fff
         }
 
-        .header button {
-            background-color: #800080;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
+        .logout-button {
+    background-color: #6a0dad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
         .search-bar {
             margin: 20px;
@@ -102,8 +112,9 @@
 <body>
     <div class="header">
         <h1>HoneyComb</h1>
-        <button>Sair</button>
+        <button class="logout-button">Sair</button>
     </div>
+    
 
     <div class="search-bar">
         <input type="text" placeholder="Pesquisar...">
